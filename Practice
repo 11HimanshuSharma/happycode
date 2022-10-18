@@ -1,0 +1,77 @@
+#python operators
+
+#1..Arthematic operators
+print(5+2) #addition
+
+print(5-2) #subtraction
+
+print(5*2) #product
+
+print(5/2) #division
+
+print(5%2) #modulas..i.e. remainder
+
+print(15//4) #gives only the integer part of the quotient
+
+print(5**2) # act as power operator that is 5^2
+
+#2..Assignment operators
+
+a=5 #assiging the value 5 to varibale a
+print(a)
+a+=3 #it means same as a=a+3
+print(a)
+a-=2 #it means same as a=a-2
+print(a)
+a*=5 #it means same as a=a*5
+print(a)
+a/=6 #it means same as a=a/5
+print(a)
+a%=3 #it means same as a=a%3
+print(a)
+a**=3 #it means same as a=a**3
+print(a)
+a//=4 #it means same as a=a//4
+print(a)
+
+#3..Comparision operators
+
+print(3==4) #equality check
+
+print(3!=4) #not equality check
+
+print(3>4) #greater then check
+
+print(3<4) #less then check
+
+print(5>=6) #greater then equality check
+
+print(5<=6) #less then equality check\
+
+#4..Logical operators
+x=2
+print(x<5 and x<8) #return true only if both the statements are true
+print(x>3 and x>1)
+
+print(x>2 or x>1) #return true if atleast one of the conditions are true
+print(x>2 or x>3)
+
+print(not(x>2 or x>3)) #it returns the reversed result(vice versa)
+
+#5..identity operators
+a=[10,20]
+b=[10,20]
+c=a
+print(a is c) #returns true if both the variables are the same object pointing to a same memory location
+print(b is a) ##it will return false because only object is same but the memory location is different here
+
+print(a==b) #it will only check only for the object value
+print(a is not b) #returns true if both variables are not the same object
+print(a is not c) 
+print(a!=b) #it returns false as a is equal to b
+
+#6..membership operator
+
+a=[1,2,3,4,50]
+print(2 in a) #in->returns true if the sequence is present in the object
+print(3 not in a) #not in-> returns true if the sequence is NOT present in the object
