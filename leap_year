@@ -1,0 +1,18 @@
+#def - in python defining works as follows.
+#def is the keyword for defining a funcation.
+# the funcation body, which is marked by indentation.
+#inside te funcation body, the return statement 
+#determines the value to be returned.
+
+#so we use "def" and "return" keyword for a funcation.\
+#related statements that performs a specific task.
+
+
+#leap_year funcatin
+
+
+year = int(input())
+if year%4 == 0:
+    print(True)
+else:
+    print(False)
