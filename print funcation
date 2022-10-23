@@ -1,0 +1,5 @@
+n = int(input())
+if ((n%2!=0) or (n%2==0) and (2<=n<=5)):
+    print("Weird")
+else ((n%2==0) and (2<=n<=5) or (20<=n)):
+    print("Not Weird")
