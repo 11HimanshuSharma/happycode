@@ -1,0 +1,12 @@
+n = int(input())
+y = n%2==0
+if n%2!=0:
+  if 2<=y<=5:
+    if 6<=y<=20:
+        if 20<=y:
+            print("Not weird")
+        print("Weird")
+    print("Not Weird")
+print("Weird")
+else:
+     print("Not weird")

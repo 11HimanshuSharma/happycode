@@ -1,18 +1,19 @@
 # using if else conditions
 #leap_year funcatin
 
-from xml.dom.minidom import Element
+
+#we are just using simple method to solve this problem
 
 
-def leap_year(y):
-    if y %400 ==0:
-        return True
-    if y % 100 ==0:
-        return False
-    if y % 4 == 0:
-        return True
-    else:
-        return False
-    
-print(leap_year(1900))
-print(leap_year(2004))
+import math
+
+year = int(input())
+
+# leaP_year conditions 
+# years divisinable by 4,400 and does not divisonable by 100. 100 is for unique conditions for leap_year, if you dont know just google it
+
+
+if ((year%400==0) or (year%4==0) and (year%100!=0)):
+    print("is leap year")
+else:
+    print("is not leap year")
