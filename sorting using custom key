@@ -1,0 +1,45 @@
+#sortingem using custom key
+employees = [
+    {'Name': 'Alan Turing', 'age': 25, 'salary': 10000},
+    {'Name': 'sharon Lin', 'age': 30, 'salary': 8000},
+    {'Name': 'Jhon Hopkins', 'age': 18, 'salary': 1000},
+    {'Name': 'Mikhail Tab', 'age': 40, 'salary': 15000}
+
+]
+
+# custom funcations to get employee info
+def get_name(employee):
+    return employee.get('Name')
+
+def get_age(employee):
+    return employee.get('age')
+
+def get_salary(employee):
+    return employee.get('salary')
+
+#sort by name(ascending order)
+
+employees.sort(key=get_name)
+print(employees, end='\n\n')
+
+#sort by age (ascending order)
+employees.sort(key=get_age)
+print(employees, end='\n\n')
+
+#sort by salary (Descending order)
+employees.sort(key=get_salary, reverse= True)
+
+
+#another method
+
+#sort by name(Ascending order)
+employees.sort(key=lambda x: x.get('Name'))
+print(employees, end='\n\n')
+
+#sort by age(ascending order)
+employees.sort(key=lambda x: x.get('age'))
+
+#sort by salary (Descending order)
+employees.sort(key=lambda x: x.get('salary'))
+print(employees, end='\n\n')
+

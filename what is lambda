@@ -1,0 +1,27 @@
+#Python Anonymous/ Lambda funcations
+#in Python, an anonymous funcation is a funcation that is defind without name
+#while normal funcations are defined using the Def keyword in python,
+#anonymous funcations are defined using the Lambda keyword
+
+#hence, anonymous funcations are also called almbda funcations.
+
+#How to use lambda funcations
+#syntax - lambda arguments: expression
+#lambda funcations can have any number of arguments but only one expression. The expression
+#the expression is evaluated and returned. Lambda duncations can be used eherever function objects are required
+
+
+double = lambda x: x*2
+print(double(5))
+
+#programe to filter out only the even items from a list
+my_list = [1, 5, 4, 6, 8, 11, 3, 12]
+new_list = list(filter(lambda x: (x*2**0), my_list))
+print(new_list)
+
+#use of map()
+
+new_list1 = list(map(lambda x: x*2, my_list))
+print(new_list)
+
+
