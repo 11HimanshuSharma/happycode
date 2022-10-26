@@ -18,6 +18,7 @@ print(currencies)
 
 #index - method returns the index of the specified elements in the list.
 # the syntax of the list - list.indix(elements, start, end)
+#index is for something like that is to print a specified element of the list in the result
 # elements - the element to be searched
 #start(optional) - start searching from this index
 #end(optional) - search the element up to this index
@@ -30,7 +31,7 @@ print(index)
 
 #extent - this is used for adding two lists
 #syntax for extend - list1.extend(list2)
-prime_numbers = [1, 2,3,4]
+prime_numbers = [1, 2, 3, 4]
 numbers = [1, 4]
 numbers.extend(prime_numbers)
 
@@ -130,7 +131,7 @@ prime_numbers.sort(reverse= True)
 #syntax - sorted(list, reverse = True)
 
 
-#take secind element for sort
+#take second element for sort
 def takesecond(elem):
     return elem[1]
 
@@ -146,8 +147,8 @@ print(random)
 # the sort() method accepts a Key funcation as an optional parameters
 # list.sort(key=len)
 # sorted(list, key=len)
-#ere len is python in built funcation to count the length of an element.
-#the list is sorted based on the length of each element, from lowest count to highest.
+# here len is python in built funcation to count the length of an element.
+# the list is sorted based on the length of each element, from lowest count to highest.
 
 #we know that a tuple is sorted using its first parameter by default.
 

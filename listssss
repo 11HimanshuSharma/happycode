@@ -1,0 +1,64 @@
+#in python, a list is created by placing elements inside square brackets []
+#list elements are mutable and can be changed and can be repeating
+#A lisr can have any number of items and they may be of differnt types.
+#A list can also have another list as an item. this is called a nested list.
+
+#list index- index is for return a specific elements
+
+my_list = [ 1, 2, 3, 4, 5, 6 , 7]
+print(my_list[3])
+
+print(my_list[2])
+print(my_list[3])
+print(my_list[1])
+
+#only integer can be used for indexing
+
+
+# creating lists
+list = []
+print("Blank list:")
+print(list)
+
+#creating a list of numbers
+list - [10, 20, 14]
+print("\nlist of numbers:")
+print(list)
+
+
+#creating a list of strings and accessing
+#using index
+list = ["geeks", "for", "geeks"]
+print(list[2])
+print(list[1])
+
+#creating multidimesional list
+#(by nesting a list inside a list)
+
+list= [['geeks', 'for'], ['geeeks']]
+
+#accessing an element from the 
+#multi-dimensinal list using
+#index number
+
+print("accessing a element form a multi dimensional list")
+print(list[0][1])
+print(list[1][0])
+
+
+#in python, negative sequence indexes represent positions form the end of the array
+#
+
+
+#len() - is used to get the length of the list
+
+#taking input of a python list
+# we can take the input of a list of elements as string, integer, float etc
+
+# spyhton program to take space
+# #separated input as a string
+#split and store it to a list
+# and print the string list
+string = input("")
+list - string.split()
+print(list)
