@@ -1,0 +1,39 @@
+#python program to split a string based on a delimiter and join the string using another delimiter.
+#split a string can be quite usefull sometimes, especially when you need only certain parts of strings.
+#get data from CSV and join to write data to CSV. In python,
+#we can use the funcation split() to split and join() to join a string.
+
+#pyhton program to split a string and
+#join it using different delimiter
+
+from argparse import ONE_OR_MORE
+
+
+def split_string(string):
+    list_string = string.split('')
+    
+    return list_string
+
+def join_string(list_string):
+    string = '-'.join(list_string)
+    
+    return string
+
+#driver funcation
+if __name__ = '__main__':
+    string = 'Geeks for geeks'
+    
+    list_string = split_string(string)
+    print(list_string)
+    
+    #join list of strings into ONE_OR_MORE
+    new_string = join_string(list_string)
+    print(new_string)
+    
+    
+    
+#normal method
+
+s = 'my name is Himanshu sharma'
+print(s.split(" "))
+print("-".join(s.split()))
