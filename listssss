@@ -62,3 +62,37 @@ print(list[1][0])
 string = input("")
 list - string.split()
 print(list)
+
+
+# adding somthing in the list
+#append 
+#using iterator
+for i in range(1, 4):
+    list.append(i)
+print("\nlist after addition of elements from 1-3:")
+
+#adding tuples to the list
+#list.appned((5, 6))
+
+# insert method only workd for the addition of elements at the 
+#end of the list, for the addition of elements at the desired position,
+#list.insert(i, element)
+
+# extend method this method is used to add multiole elements at the same time at the end of the list
+
+
+# reversing list
+# using reverse method
+#list.reverse()
+
+
+#removing elements-
+# list.remove()
+#remove method in list will only remove the firse occurrence of the searched elements
+
+# pop method is used for a specific output at the perticular index
+
+
+# slicing of a list
+#print elements from beginning to the end[:end]
+# print whole list in reverse order [::-1]
