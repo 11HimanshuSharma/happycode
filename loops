@@ -1,0 +1,71 @@
+#while- a while  loops is used to excute a block of statements repeatedly until agiven conditio is satisfied
+#and when the condition becomes false, the line immediately after the loop in the program is executed
+
+
+x = 0
+while x<3:
+  x = x+1
+  print("hello buddy")
+  
+x = 1
+while x<10:
+   x = x+1
+   print(x)
+ # it will start from 2
+ 
+ x = 1
+ while x<10:
+    print(x)
+    x = x+1
+    
+    
+#the code is written in between while operator is always repeats
+
+
+x = 1
+while x<10:
+   x = x+1
+   if x==4:
+   continue
+   print(x)
+   
+# here continue is used to skip current iteration it will lift that value and continue to the next
+
+
+# if else conditons in loops
+
+x= 0
+while x<10:
+   x= x+1
+   if x==1:
+     continue
+     print(x)
+else:
+  print("x is out of ranges")
+  
+  
+  
+#for loops
+
+num = [103,2345,25,325,]
+for i in num:
+print(i)
+
+for i in "hello buddy"
+print(i)
+
+
+for i in num:
+   if i == 103:
+       continue
+   print(i)
+   
+   
+ #range
+ 
+ for x in range(6):
+    print(x)
+ else:
+ print("x is out of range)
+ 
+   
