@@ -1,0 +1,121 @@
+Ans 1
+class vehicle:
+   def __init__(self,max_speed,mileage)
+       self.max_speed = max_speed
+       self.mileage = mileage
+       
+p = vehicele(120,390)
+print(p.max_speed,p.mileage)
+
+Ans 2
+class vehicle:
+   pass
+
+
+#Ans 3
+class vehicle:
+   def __init__(self, name, max_speed, mileage):
+        self.name = name
+        self.max_speed = speed
+        self.mileage = mileage
+        
+class Bus(vehicle):
+   pass
+my_bus = Bus("School Volvo Speed",180,12)
+print(f"Vehicle Name:{my_bus.name} Speed;{my_bus.max_speed} Mileage:{my_bus.mileage}")
+
+
+Ans4
+class vehicle:
+   def __init__(self, name, max_speed, mileage):
+       self.name = name
+       self.max_speed = max_speed
+       self.milaege = mileage
+       
+   def seating_capacity(self, capacity):
+        return f"the seating capacity of a{self.name} is {capacity} passengers"
+
+
+class bus(vehicle):
+     def seating_capacity(self, capacity=50):
+         return super().seating_capacity(capacity=50)
+         
+         
+         
+x_bus = bus("x",392,389)
+print(x_bus.seating_capacity())
+
+
+Ans- 5
+
+class vehicle:
+   color = "white"
+   def __init__(self, name, max_speed, mileage)
+       self.name = name
+       self.max_speed = max_speed
+       self.mileage = mileage
+       
+class Bus(vehicle):
+   pass
+class car(vehicle)
+   pass
+   
+x = Bus("gds",839,3424)
+print("color:", x.color, "vehicle name:" x.name, "speed:, x.max_speed, "mileage:", x.mileage)
+
+
+y = car("jdf",43,24)
+print("color:" x.color, "vehicle name:" x.name,"speed:",x.max_speed, "mileage:", x.mileage)
+
+
+
+Ans 6
+class vehicle:
+   color = "white"
+   def __init__(self, name, max_speed, mileage)
+       self.name = name
+       self.max_speed = max_speed
+       self.mileage = mileage
+       
+   def fare(slef):
+      return self.capacity*100
+       
+class Bus(vehicle):
+    amount = super().fare()
+        amount += amount*10/100
+        return amount
+
+   
+school_bus = Bus("school volvo",13,323)
+print("Total bus fare is:",school_bus.fare())
+
+Ans 7
+class vehicle:
+   color = "white"
+   def __init__(self, name, max_speed, mileage)
+       self.name = name
+       self.max_speed = max_speed
+       self.mileage = mileage
+       
+class Bus(vehicle):
+   pass
+   
+x = Bus("sdf",23,32)
+print(type(x.bus))
+   
+   
+   
+Ans 8
+class vehicle:
+   color = "white"
+   def __init__(self, name, max_speed, mileage)
+       self.name = name
+       self.max_speed = max_speed
+       self.mileage = mileage
+       
+class Bus(vehicle):
+   pass
+   
+x = Bus("sdf",23,32)
+print(isinstance(x,vehicle)
+  
