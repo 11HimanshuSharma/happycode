@@ -1,0 +1,47 @@
+.container {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .container .hero-image {
+  margin-top: 153px;
+  margin-bottom: 153px;
+  border-radius: 20px;
+}
+
+section.about {
+  background-color: black;
+  font-size: 20px;
+  padding: 100px;
+}
+
+section.buttom {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+}
+
+section.buttom .trade {
+  padding: 150px;
+  width: 27%;
+  text-align: center;
+}
+
+section.buttom .questions {
+  padding: 150px;
+  width: 27%;
+  text-align: center;
+}
+
+#heading {
+  color: blue;
+}
+
+* {
+  color: antiquewhite;
+}
+#img {
+  border-radius: 300px;
+}
