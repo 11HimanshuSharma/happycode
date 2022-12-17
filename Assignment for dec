@@ -1,0 +1,193 @@
+Ans 1
+l1 = [3,6,9,12,15,18,21]
+l2 = [4,8,12,16,20,24,28]
+l3 = []
+l4 = []
+for i in range(len(l1)):
+    if i%2!=0:
+        a = l1[i]
+        l3.append(a)
+    
+print(l3)
+for i in range(len(l2)):
+    if i%2==0:
+        b = l2[i]
+        l4.append(b)
+    
+print( l4)
+print(l3.extend(l4))
+
+#Ans 2
+list1 = [54, 44, 27,79, 91, 41]
+d = list1[4]
+del list1[4]
+print(list1)
+print("List After removing element at index 4", list1)
+list1.insert(4, d)
+print("List after Adding element at index 2", list1)
+list1.insert(-1, "11")
+print("List after Adding element at last ", list1)
+
+#ans 3
+l = [11, 45, 8, 23, 14, 12, 78, 45, 89]
+a = l[0:len(l)//3]
+b = l[len(l)//3:2*len(l)//3]
+c = l[2*len(l)//3::]
+print("chunk 1", a)
+print("After reversing it", a[::-1])
+print("chunk 2", b)
+print("After reversing it", b[::-1])
+print("chuck 3", c)
+print("After reversing it", c[::-1])
+
+#and 4
+l = [11, 45, 8, 11, 23, 45, 23, 45, 89]
+d = {}
+for i in range(len(l)):
+    d[l[i]] = l.count(l[i])
+    
+print("printng count of each item", d)
+
+#ans 5
+l1 = [2,3,4,5,6,7,8]
+l2 = [4,9,16,25,36,49,64]
+d = []
+for i in range(len(l1)):
+    for j in range(len(l2)):
+        if i==j:
+            a = (l1[i] , l2[j])
+            d.append(a)
+        
+print("Result is ", dict(d))
+
+#ans 6
+s1 = {23, 42, 65, 57, 78, 83, 29}
+s2 = {57, 83, 29, 67, 73, 43, 48}
+l = []
+for i in s1:
+    for j in s2:
+        if i==j:
+            l.append(i)
+print(l)
+
+l2 = []
+for i in range(len(list(s1))):
+    if list(s1)[i] not in l:
+        l2.append(list(s1)[i])
+        
+    
+print(l2)
+            
+            
+#ans 7
+s1 = {27, 43, 34}
+s2 = {34, 93, 22, 27, 43, 53, 48}
+l1 = list(s1)
+l2 = list(s2)
+c = 0
+for i in range(len(l1)):
+    if l1[i] in l2:
+        c = c + 1
+        if c == len(l1):
+            print("True")
+    else:
+        print("False")
+        break
+d = 0        
+for i in range(len(l2)):
+    if l2[i] in l1:
+        d = d + 1
+        if d == len(l2):
+            print("True")
+    else:
+        print("False")
+        break
+        
+            
+   #ans 8
+   n = [47, 64, 69, 37, 76, 83, 95, 97]
+d = {"jhon":47, "Emma":69, "Kelly":76, "Jason":97}
+
+
+#ans 9
+s = {"jan": 47, "feb": 52, "march": 47, "april":44, "may": 52, "june":53, "july": 54, "aug": 44, "spet": 54}
+d = list(s.values())
+print(*set(d))
+    
+    
+#ans 10
+s = [87, 45, 41, 65, 94, 41, 99, 94]
+l = [*set(s)]
+print("Unique items" ,l)
+print("tuple", tuple(l))
+print("min:", min(l))
+print("max:", max(l))
+
+print("After removing unwanted elements from list", list(d.values()))
+
+
+
+
+#Problems on dictionaries
+
+#ans 1
+keys = ['Ten', 'Twenty', 'Thirty']
+values = [10, 20, 30]
+
+d = {}
+for i in range(len(keys)):
+    d[keys[i]] = values[i]
+    
+print(d)
+
+
+
+#ans 2
+
+d1 = {"ten": 10, "Twenty": 20, "thirty": 30}
+d2 = {"thirty": 30, "fourty": 40, "fifty": 50}
+d1.update(d2)
+print(d1)
+
+
+#ans 4
+e = ["Kelly", "Emma"]
+d = {"designation": "Developer", "salary": 8000}
+dic = {}
+for i in range(len(e)):
+    dic[e[i]] = d
+print(dic)
+    
+    
+#ans 5
+
+s = {"name": "kelly", "age": 25, "salary": 8000, "city":"New york"}
+
+keys = ["name", "salary"]
+d = {}
+for i in range(len(keys)):
+    d[keys[i]] = s.get(keys[i])
+print(d)
+    
+    
+#ans 6
+
+s = {"name":"kelly","age":25,"salary":8000,"city":"New york"}
+
+keys = ["name","salary"]
+d = {}
+for i in range(len(s)):
+    if list(s.keys())[i] not in keys:
+        d[list(s.keys())[i]] = list(s.values())[i]
+        
+print(d)
+
+
+#ans 7
+s = {"a": 100, "b": 200, "c": 300}
+val = int(input())
+
+if val in s.values():
+    print(val,"present in a dict")
+else:
+    print(val,"not present in a dict")
