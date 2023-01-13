@@ -1,0 +1,5 @@
+lis = [12,412,4,52,563,63,23,23,45,23,52,325]
+
+lis.sort()
+
+print("Largest number in the list:",lis[-1])

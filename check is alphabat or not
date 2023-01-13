@@ -1,0 +1,9 @@
+# this program is to find is input is alphabet or not.
+
+chr = input("Enter a Character: ")
+
+
+if (chr >= 'a' and chr <= 'z') or (chr >= 'A' and chr <= 'Z'):
+  print(chr, "is a alphabet.")
+else:
+  print(chr, "is not a alphabet.")
